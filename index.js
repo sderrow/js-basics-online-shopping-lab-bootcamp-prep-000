@@ -23,8 +23,8 @@ function viewCart() {
   } else {
     line = "In your cart, you have "
     for (let i = 0; i < cart.length; i++ ) {
-      name = Object.keys(cart[i])[0]
-      price = cart[i][name]
+      let name = Object.keys(cart[i])[0]
+      let price = cart[i][name]
       line += `${name} at $${price}`
       if (cart.length == i + 1) {
         line += "."
